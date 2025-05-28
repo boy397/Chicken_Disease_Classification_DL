@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cnnClassifier"
+version = "0.0.0"
+description = "Image classification using deep learning"
+authors = [
+  { name = "boy397", email = "aryamukherjee397@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "tensorflow",
+  "pandas",
+  "dvc",
+  "notebook",
+  "numpy",
+  "matplotlib",
+  "seaborn",
+  "python-box==6.0.2",
+  "pyYAML",
+  "tqdm",
+  "ensure==1.0.2",
+  "joblib",
+  "types-PyYAML",
+  "scipy",
+  "Flask",
+  "Flask-Cors"
+]
+
+[project.urls]
+Homepage = "https://github.com/boy397/Chicken_Disease_Classification_DL"
+BugTracker = "https://github.com/boy397/Chicken_Disease_Classification_DL/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
